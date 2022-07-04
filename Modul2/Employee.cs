@@ -17,6 +17,11 @@ namespace Modul2
             HireDate = hireDate;
         }
 
+        public override string ToString()
+        {
+            return base.ToString() + $"\nHire date: {HireDate}\n";
+        }
+
         
     }
 }

@@ -8,6 +8,8 @@ namespace Modul2
 {
     public   class Person
     {
+        //TODO
+        //private gir trøbbel i subClasse. evt protected, protected eller public på properties?
         public string Name { get; set; }
         public int Age { get; set; }
 
@@ -16,6 +18,11 @@ namespace Modul2
             Name = name;
             Age = age;
 
+        }
+
+        public override string ToString()
+        {
+            return $"Name: {Name}\nAge: {Age}\n";
         }
 
     }

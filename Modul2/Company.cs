@@ -11,10 +11,21 @@ namespace Modul2
         public string Name { get; set; }
         public int EmployeeCount { get; set; }
 
+        public List<Person> DatabaseList { get; set; }
+
+        
         public Company(string name, int employeeCount)
         {
             Name = name;
             EmployeeCount = employeeCount;
+        }
+
+          public void PrintAllEmployees()
+        {
+            foreach (var employee in DatabaseList)
+            {
+                Console.WriteLine(employee.ToString());
+            }
         }
     }
 }
