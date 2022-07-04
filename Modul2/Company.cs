@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Modul2
+﻿namespace Modul2
 {
     public class Company
     {
         public string Name { get; protected set; }
         public int EmployeeCount { get; protected set; }
+        public List<Person> DatabaseList { get; set; } = new();
 
-        public List<Person> DatabaseList { get; set; }
 
-        
         public Company(string name, int employeeCount = 0)
         {
             Name = name;
@@ -27,5 +20,18 @@ namespace Modul2
                 Console.WriteLine(employee.ToString());
             }
         }
+
+        //public override bool Equals(object obj)
+        //{
+        //    if (obj is Employee)
+        //    {
+        //        // Compare using our normal Equals method:
+        //        return Equals((Employee)obj);
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
     }
 }
