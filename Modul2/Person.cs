@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modul2
 {
-    public   class Person
+    public abstract class Person
     {
         //TODO
         //private gir trøbbel i subClasse. evt protected, protected eller public på properties?

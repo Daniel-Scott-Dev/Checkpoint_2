@@ -8,9 +8,9 @@ namespace Modul2
 {
     public class Employee : Person
     {
-        public DateTime HireDate { get; set; }
+        public string HireDate { get; set; }
 
-        public Employee(string name, int age, DateTime hireDate) : base(name, age)
+        public Employee(string name, int age, string hireDate) : base(name, age)
         {
             Name = name;
             Age = age;

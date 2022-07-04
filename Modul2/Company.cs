@@ -14,13 +14,13 @@ namespace Modul2
         public List<Person> DatabaseList { get; set; }
 
         
-        public Company(string name, int employeeCount)
+        public Company(string name, int employeeCount = 0)
         {
             Name = name;
             EmployeeCount = employeeCount;
         }
 
-          public void PrintAllEmployees()
+        public void PrintAllEmployees()
         {
             foreach (var employee in DatabaseList)
             {
