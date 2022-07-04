@@ -9,6 +9,12 @@ namespace Modul2
     public class Company
     {
         public string Name { get; set; }
-        public int  EmployeeCount { get; set; }
+        public int EmployeeCount { get; set; }
+
+        public Company(string name, int employeeCount)
+        {
+            Name = name;
+            EmployeeCount = employeeCount;
+        }
     }
 }
