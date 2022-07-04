@@ -8,8 +8,8 @@ namespace Modul2
 {
     public class Company
     {
-        public string Name { get; set; }
-        public int EmployeeCount { get; set; }
+        public string Name { get; protected set; }
+        public int EmployeeCount { get; protected set; }
 
         public List<Person> DatabaseList { get; set; }
 

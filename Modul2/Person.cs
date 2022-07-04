@@ -8,10 +8,8 @@ namespace Modul2
 {
     public abstract class Person
     {
-        //TODO
-        //private gir trøbbel i subClasse. evt protected, protected eller public på properties?
-        public string Name { get; set; }
-        public int Age { get; set; }
+        public string Name { get; protected set; }
+        public int Age { get; protected set; }
 
         public Person(string name, int age)
         {

@@ -16,10 +16,10 @@
 
             Employee employee3 = new("Iben", 2, "04.05.2022");
             company.DatabaseList.Add(employee3);
-            
+
             company.PrintAllEmployees();
 
-            Console.WriteLine(company.DatabaseList.Count);
+            Console.WriteLine($"{company.Name} has {company.DatabaseList.Count} employee's");
 
 
 
