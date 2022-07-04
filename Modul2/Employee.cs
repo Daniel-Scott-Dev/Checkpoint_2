@@ -19,7 +19,7 @@ namespace Modul2
 
         public override string ToString()
         {
-            return base.ToString() + $"\nHire date: {HireDate}\n";
+            return base.ToString() + $"Hire date: {HireDate}\n";
         }
 
         
